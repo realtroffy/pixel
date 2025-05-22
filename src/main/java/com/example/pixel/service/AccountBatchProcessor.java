@@ -1,6 +1,5 @@
 package com.example.pixel.service;
 
-import com.example.pixel.exception.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.dao.PessimisticLockingFailureException;

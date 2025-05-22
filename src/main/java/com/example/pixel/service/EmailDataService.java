@@ -2,7 +2,6 @@ package com.example.pixel.service;
 
 import com.example.pixel.dto.EmailDataRequestDto;
 import com.example.pixel.dto.EmailDataResponseDto;
-import org.springframework.security.core.Authentication;
 
 public interface EmailDataService {
 

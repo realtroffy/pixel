@@ -2,8 +2,6 @@ package com.example.pixel.service;
 
 import com.example.pixel.dto.PhoneDataRequestDto;
 import com.example.pixel.dto.PhoneDataResponseDto;
-import jakarta.validation.Valid;
-import org.springframework.security.core.Authentication;
 
 public interface PhoneDataService {
 
