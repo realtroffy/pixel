@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1.0.7
+      author: Artur Asiptsou
+      changes:
+        - sql:
+            sql: INSERT INTO phone_data (user_id, phone) VALUES
+              (1, '79999999999'),
+              (2, '78888888888'),
+              (3, '76666666666');

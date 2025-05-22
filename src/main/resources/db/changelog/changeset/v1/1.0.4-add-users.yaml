@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1.0.4
+      author: Artur Asiptsou
+      changes:
+        - sql:
+            sql: INSERT INTO users (name, date_of_birth, PASSWORD) VALUES
+                  ('Alice', '1990-01-01', '$2a$10$yfpOTggp9dztXdtv5RMUBeluu6GLNVk5CRYv7o3f447lYkFANhIKS'),
+                  ('Bob', '1985-05-15', '$2a$10$yfpOTggp9dztXdtv5RMUBeluu6GLNVk5CRYv7o3f447lYkFANhIKS'),
+                  ('Charlie', '1993-10-10', '$2a$10$yfpOTggp9dztXdtv5RMUBeluu6GLNVk5CRYv7o3f447lYkFANhIKS');

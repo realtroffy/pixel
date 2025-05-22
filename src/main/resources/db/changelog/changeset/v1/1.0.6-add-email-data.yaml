@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1.0.6
+      author: Artur Asiptsou
+      changes:
+        - sql:
+            sql: INSERT INTO email_data (user_id, email) VALUES
+              (1, 'alice@mail.com'),
+              (2, 'bob@mail.com'),
+              (3, 'charlie@mail.com');

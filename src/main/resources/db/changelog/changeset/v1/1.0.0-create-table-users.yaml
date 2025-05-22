@@ -1,0 +1,28 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1.0.0
+      author: Artur Asiptsou
+      changes:
+        - createTable:
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: VARCHAR(500)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: date_of_birth
+                  type: DATE
+              - column:
+                  name: PASSWORD
+                  type: VARCHAR(500)
+                  constraints:
+                    nullable: false

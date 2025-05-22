@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1.0.5
+      author: Artur Asiptsou
+      changes:
+        - sql:
+            sql: INSERT INTO account (user_id, current_balance, initial_balance) VALUES
+              (1, 100, 100),
+              (2, 10, 10),
+              (3, 200, 10);
