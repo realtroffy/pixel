@@ -11,7 +11,6 @@ import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -54,22 +53,18 @@ public class User implements Serializable, UserDetails {
 
     @Column(nullable = false, length = 500)
     @ToString.Exclude
-    @EqualsAndHashCode.Exclude
     private String password;
 
     @OneToMany(mappedBy = "user", cascade = {CascadeType.PERSIST, CascadeType.MERGE}, orphanRemoval = true)
     @ToString.Exclude
-    @EqualsAndHashCode.Exclude
     private List<EmailData> emails = new ArrayList<>();
 
     @OneToMany(mappedBy = "user", cascade = {CascadeType.PERSIST, CascadeType.MERGE}, orphanRemoval = true)
     @ToString.Exclude
-    @EqualsAndHashCode.Exclude
     private List<PhoneData> phones = new ArrayList<>();
 
     @OneToOne(mappedBy = "user")
     @ToString.Exclude
-    @EqualsAndHashCode.Exclude
     private Account account;
 
     @Override
